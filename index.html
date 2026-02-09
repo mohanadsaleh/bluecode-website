@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blue Code | Premier Engineering Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --primary: #0F52BA;
+        --dark-bg: #020617;
+        --light-bg: #F8FAFC;
+      }
+      html { scroll-padding-top: 90px; }
+      body {
+        margin: 0;
+        font-family: 'Plus Jakarta Sans', 'IBM Plex Sans Arabic', sans-serif;
+        overflow-x: hidden;
+      }
+      .rtl { direction: rtl; font-family: 'IBM Plex Sans Arabic', sans-serif; }
+      
+      .noise-bg::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: 1;
+        opacity: 0.02;
+        pointer-events: none;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+      }
+
+      .bento-card {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+        box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
+      }
+      
+      .light .bento-card {
+        background: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(15, 82, 186, 0.15);
+        box-shadow: 0 10px 40px -15px rgba(0, 0, 0, 0.08);
+      }
+
+      .bento-card:hover {
+        transform: translateY(-8px) scale(1.01);
+        background: rgba(255, 255, 255, 0.06);
+        border-color: rgba(15, 82, 186, 0.5);
+        box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.5);
+      }
+
+      .glow-blue {
+        filter: drop-shadow(0 0 15px rgba(15, 82, 186, 0.6));
+      }
+
+      @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .reveal { animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+
+      .hero-title {
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+      }
+      
+      body {
+        max-width: 100vw;
+        overflow-x: hidden;
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@18.2.0",
+        "react/": "https://esm.sh/react@18.2.0/",
+        "react-dom": "https://esm.sh/react-dom@18.2.0",
+        "react-dom/": "https://esm.sh/react-dom@18.2.0/",
+        "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+        "lucide-react": "https://esm.sh/lucide-react@0.463.0?external=react"
+      }
+    }
+    </script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body class="noise-bg overflow-x-hidden selection:bg-blue-500/30">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
