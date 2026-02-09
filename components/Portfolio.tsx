@@ -59,6 +59,7 @@ const Portfolio: React.FC = () => {
       client: 'Flare Mug Studio',
       type: 'web',
       image: 'FM_PRODUCT',
+      url: 'https://flaremug.netlify.app/',
       gallery: ['FM_HOME', 'FM_CART', 'FM_CART_DETAL', 'FM_ODEME'],
       fallbackImage: 'https://images.unsplash.com/photo-1556742049-13e73ce3a789?q=80&w=1200&auto=format&fit=crop',
       description: language === 'ar'
