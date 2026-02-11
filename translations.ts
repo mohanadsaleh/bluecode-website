@@ -43,7 +43,7 @@ export const translations: Record<'en' | 'ar', TranslationStrings> = {
         consulting: 'Consulting',
         uiux: 'UI/UX',
       },
-      caseStudy: 'View Case Study',
+      caseStudy: 'Project View',
     },
     process: {
       title: 'Our Method',
@@ -118,7 +118,7 @@ export const translations: Record<'en' | 'ar', TranslationStrings> = {
       },
     },
     services: {
-      title: 'خبراتنا',
+      title: 'خدماتنا',
       subtitle: 'حلول رقمية شاملة مصممة لنمو أعمالك.',
       items: {
         web: { title: 'تطوير المواقع', desc: 'من المواقع المؤسسية الكبرى إلى منصات التجارة الإلكترونية عالية التحويل.' },
@@ -138,7 +138,7 @@ export const translations: Record<'en' | 'ar', TranslationStrings> = {
         consulting: 'استشارات',
         uiux: 'تصميم',
       },
-      caseStudy: 'مشاهدة دراسة الحالة',
+      caseStudy: 'عرض المشروع',
     },
     process: {
       title: 'منهجيتنا',
